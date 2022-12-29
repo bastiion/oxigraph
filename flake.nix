@@ -34,7 +34,7 @@
         ]);
 
         patchPhase = ''
-          rm -rf oxrocksdb-sys/{rocksdb,lz4} lz4
+          rm -rf oxrocksdb-sys/{rocksdb,lz4}
           ln -s ${pkgs.rocksdb.src} oxrocksdb-sys/rocksdb
           ln -s ${pkgs.lz4.src} oxrocksdb-sys/lz4
         '';
